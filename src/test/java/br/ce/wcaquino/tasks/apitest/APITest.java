@@ -59,7 +59,7 @@ public class APITest {
 			.post("/todo")
 		.then()
 //			.log().all()
-			.statusCode(201)
+			.statusCode(400)
 			.extract().path("id")
 		;
 		
